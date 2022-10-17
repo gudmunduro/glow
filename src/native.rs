@@ -2252,7 +2252,7 @@ impl HasContext for Context {
         data_type: u32,
         normalized: bool,
         stride: i32,
-        offset: i32,
+        offset: u64,
     ) {
         let gl = &self.raw;
         gl.VertexAttribPointer(
@@ -2271,7 +2271,7 @@ impl HasContext for Context {
         size: i32,
         data_type: u32,
         stride: i32,
-        offset: i32,
+        offset: u64,
     ) {
         let gl = &self.raw;
         gl.VertexAttribIPointer(
@@ -2289,7 +2289,7 @@ impl HasContext for Context {
         size: i32,
         data_type: u32,
         stride: i32,
-        offset: i32,
+        offset: u64,
     ) {
         let gl = &self.raw;
         gl.VertexAttribLPointer(
