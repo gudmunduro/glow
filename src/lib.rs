@@ -1011,7 +1011,7 @@ pub trait HasContext {
         data_type: u32,
         normalized: bool,
         stride: i32,
-        offset: i32,
+        offset: u64,
     );
 
     unsafe fn vertex_attrib_pointer_i32(
@@ -1020,7 +1020,7 @@ pub trait HasContext {
         size: i32,
         data_type: u32,
         stride: i32,
-        offset: i32,
+        offset: u64,
     );
 
     unsafe fn vertex_attrib_pointer_f64(
@@ -1029,7 +1029,7 @@ pub trait HasContext {
         size: i32,
         data_type: u32,
         stride: i32,
-        offset: i32,
+        offset: u64,
     );
 
     unsafe fn vertex_attrib_format_f32(
